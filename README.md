@@ -1,4 +1,6 @@
-- 支持代码创建子证书，传入 CA 根证书，根据域名创建子证书 p12
+## Features
+
+- Support to create sub-certificate, pass in CA root certificate, create sub-certificate based on domain name p12
 
 ## Usage
 
@@ -7,10 +9,10 @@ pod 'HTOpenSSL', :git => 'https://github.com/hellohublot/HTOpenSSL.git'
 ```
 ```swift
 /*
-	hostchar: 要创建子证书的域名
-	cacrtstruct: 根证书公钥 crt 的结构体
-	cakeystruct: 根证书私钥 key 的结构体
-	passwordchar: 创建的子证书 pk12 密码
+	hostchar: Domain name to create sub-certificate
+	cacrtstruct: The structure of the root certificate public key crt
+	cakeystruct: The structure of the root certificate private key key
+	passwordchar: Created sub-certificate pk12 password
 */
 
 createPK12With(&hostchar, cacrtstruct, cakeystruct, &passwordchar)
