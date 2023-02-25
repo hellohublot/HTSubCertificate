@@ -1,12 +1,18 @@
+## HTSubCertificate
+A library for creating subordinate certificates on iOS using OpenSSL
+
 ## Features
 
-- Support to create sub-certificate, pass in CA root certificate, create sub-certificate based on domain name p12
+- Provide the public key and private key of the root certificate, and create a P12 certificate based on the password
 
-## Usage
-
+## Install
 ```ruby
 pod 'HTOpenSSL', :git => 'https://github.com/hellohublot/HTOpenSSL.git'
 ```
+
+## Usage
+
+
 ```swift
 /*
 	hostchar: Domain name to create sub-certificate
@@ -19,6 +25,6 @@ createPK12With(&hostchar, cacrtstruct, cakeystruct, &passwordchar)
 
 ```
 
-## Author
+## Contact
 
 hellohublot, hublot@aliyun.com
